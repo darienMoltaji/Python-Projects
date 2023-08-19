@@ -109,6 +109,9 @@ def display_game():
     print("Incorrect guesses:", ", ".join(g for g in guessed_letters if g not in chosen_word))
 
 def get_guess():
+    """
+    kossher
+    """
     guess = input("Guess a letter: ").lower()
     if len(guess) != 1 or not guess.isalpha():
         print("Please enter a single letter.")
