@@ -14,7 +14,7 @@ def scrape_hyperlinks():
             hyperlinks_text = hyperlink.attrs['href']
             results['hyperlinks'].append(hyperlinks_text)
             # print(f"{hyperlinks_text}\n")
-        with open("hyperlinks.json", "w") as file:
+        with open("hyperlinks.json", "w", encoding="utf-8") as file:
             file.write(json.dumps(results))
     else:
         print("Failed to retrieve data from the website.")
