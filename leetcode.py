@@ -20,7 +20,7 @@ class Solution(object):
     
 
 # roman to integer
-class Solution:
+class different_solution:
     def romanToInt(self, s):
         m = {
             'I': 1,
