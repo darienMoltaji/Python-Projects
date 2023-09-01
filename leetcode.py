@@ -134,3 +134,25 @@ class Solution(object):
                 if n == 0:
                     return True
         return False
+
+
+# climbing stairs
+class Solution(object):
+    def climbStairs(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
+        if n == 0: 
+            return 0
+        if n == 1: 
+            return 1
+        if n == 2: 
+            return 2
+        climb = [0]*(n+1)
+        climb[1] = 1
+        climb[2] = 2
+        for i in range(3, n+1):
+            climb[i] = climb[i-1] + climb[i-2]
+        print(climb)
+        return climb[n]
