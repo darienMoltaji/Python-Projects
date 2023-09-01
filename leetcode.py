@@ -115,3 +115,5 @@ class Solution(object):
                 nums[index] = nums[i]
                 index += 1
         return index
+
+#can place flowers
