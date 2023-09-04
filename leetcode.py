@@ -179,3 +179,6 @@ class Solution(object):
                 count -=1
         return majority 
         
+
+
+# find the index of the first occurrence in a string
