@@ -198,7 +198,7 @@ class Solution(object):
         for i in range(h-n+1):
             found = True
             for j in range(n):
-                if haystack[i+j] != needle[j];
+                if haystack[i+j] != needle[j]:
                     found = False
                     break
             if found:
