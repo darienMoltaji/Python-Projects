@@ -182,3 +182,25 @@ class Solution(object):
 
 
 # find the index of the first occurrence in a string
+class Solution(object):
+    def strStr(self, haystack, needle):
+        """
+        :type haystack: str
+        :type needle: str
+        :rtype: int
+        """
+        h = len(haystack)
+        n = len(needle)
+
+        if n == 0:
+            return 0
+        
+        for i in range(h-n+1):
+            found = True
+            for j in range(n):
+                if haystack[i+j] != needle[j];
+                    found = False
+                    break
+            if found:
+                return i
+        return -1
