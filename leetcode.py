@@ -228,17 +228,3 @@ class Solution(object):
         return result
     
     # changes
-
-
-class Solution1(object):
-    def divide(self, dividend, divisor):
-        sign = -1 if (dividend >= 0 and divisor < 0)
-        dividend = abs(dividend)
-        divisor = abs(divisor)
-        result - len(range(0, dividend-divisor+1,divisor))
-        if sign == -1
-            result = -result
-        minus_limit = -(2**31)
-        plus_limit = (2**31 -1)
-        result = min(max(result, minus_limit), plus limit)
-        return result
